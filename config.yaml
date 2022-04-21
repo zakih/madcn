@@ -1,0 +1,37 @@
+# Copyright (c) 2022 California Institute of Technology (“Caltech”). U.S. Government sponsorship acknowledged.
+
+# output
+output_dir: "output"
+sim_name: "testsim"
+viz_edge_props: False  # Set to 'True' to display edge properties in full network diagram
+viz_circle_layout: False  # Set to 'True' to display nodes in circle layout in network diagrams. Circle layout required for networks more than 6 nodes.
+
+# To read existing network from a file
+graph_data_file: "data/sample_graph_data.json"  # if generate_random_graph=False, give file which defines nodes and edges here
+
+
+# To generate random network (only if flag --random is passed)
+num_relay_nodes: 5
+num_data_source_nodes: 5
+p_r_ds: 0.5  # probability of connection between relay and data source nodes
+p_ds_base: 0.3  # probability of connection between base and data source nodes
+edge_capacities: 200  # data volume capacity for all edges in generated network
+min_data_at_source: 50  # each data source node produces at least this much data
+max_data_at_source: 100  # each data source node produces at most this much data
+
+
+# Transmission/compression costs
+cost_rates:
+  energy:  # 
+    e_compress: 2  # joules/bits to compress data
+    e_transfer_compressed: 4  # joules/bits to transfer compressed data
+    e_transfer_uncompressed: 6  # joules/bits to transfer uncompressed data 
+  time:
+    t_compress: 5  # seconds/bits to compress data
+    t_transfer_compressed: 10  # seconds/bits to transfer compressed data
+    t_transfer_uncompressed: 20  # seconds/bits to transfer uncompressed data
+
+
+# Problem 3 (max data)
+max_energy: 10000  # energy budget for transferring and compressing data in max data problem (problem 3)
+max_makespan: 8000  # time limit for transferring and compressing data in max data problem (problem 3)

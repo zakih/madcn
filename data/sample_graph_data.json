@@ -1,0 +1,33 @@
+{
+    "nodes": [
+        {
+            "name": "r-1",
+            "data": 0
+        },
+        {
+            "name": "base",
+            "data": 0
+        },
+        {
+            "name": "ds-1",
+            "data": 100
+        }
+    ],
+    "edges": [
+        {
+            "from": "r-1",
+            "to": "base",
+            "capacity": 300
+        },
+        {
+            "from": "ds-1",
+            "to": "base",
+            "capacity": 400
+        },
+        {
+            "from": "ds-1",
+            "to": "r-1",
+            "capacity": 500
+        }
+    ]
+}

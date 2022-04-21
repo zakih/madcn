@@ -1,0 +1,4 @@
+glpk>=0.4.6
+networkx>=2.5.1
+numpy>=1.19.5
+PyYAML>=5.3.1
