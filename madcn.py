@@ -1,8 +1,8 @@
 '''
 Description: Solves 3 problems (min-energy, min-uptime, max-data) for a data network consisting of multiple data sources and compression capability.
 Date: January, 2022
-Author: Zaki Hasnain
-Author: Joshua Vander Hook
+Author: Zaki Hasnain github.com/zaih
+Author: Joshua Vander Hook github.com/jodavaho
 
 Copyright (c) 2022 California Institute of Technology (“Caltech”). U.S. Government sponsorship acknowledged.
 
